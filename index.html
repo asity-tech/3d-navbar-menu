@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav_bar">
+        <div class="nav_menu">
+          <h2>Mani<span>kangkan</span></h2>
+          <div class="nav_hb">
+            <div class="bar"></div>
+          </div>
+        </div>
+      </div>
+      <div class="main_container">
+        <div class="main">
+          <div class="inner">
+            <h1>Welcome to Manikangkan.com</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Obcaecati, voluptatibus? Modi saepe eveniet, nam quis consectetur
+              reiciendis libero autem omnis eaque, vel laboriosam unde culpa.
+            </p>
+            <button>hit me</button>
+          </div>
+        </div>
+      </div>
+      <div class="links">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Manikangkan.io</li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      const hb = document.querySelector(".nav_hb");
+      const container = document.querySelector(".container");
+
+      hb.addEventListener("click", () => {
+        container.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
